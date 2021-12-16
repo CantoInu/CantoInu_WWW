@@ -1,0 +1,61 @@
+@import 'styles/shared.module.scss';
+
+.pageWrapper {
+  // position: relative;
+  // top: $nav-height;
+  min-height: 100vh;
+}
+
+.pageContainer {
+  flex-grow: 1;
+  padding: 30px;
+
+  &.pageContainerFullWidth {
+    padding: 0,
+  }
+}
+
+.titleRowContentWrapper {
+  display: flex;
+}
+
+.titleRowContentItem {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.pageLoadingSpinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  z-index: 5;
+}
+
+.pageErrorWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.pageErrorTitleText {
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $font-color-primary;
+}
+
+// container
+.containerWrapper {
+  flex: 1;
+  max-width: $max-content-width;
+
+  &.fullWidth {
+    max-width: unset;
+  }
+}

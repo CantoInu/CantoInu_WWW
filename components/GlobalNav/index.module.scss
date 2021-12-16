@@ -1,0 +1,59 @@
+@import 'styles/shared.module.scss';
+
+// GlobalNav
+.navigationWrapper {
+  position: absolute;
+  z-index: 6;
+  height: $nav-height;
+  width: 100%;
+  user-select: none;
+}
+
+.navigationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.navigationMenuItemsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navigationMenuItemsLeft {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navTitle {
+  font-size: 30px;
+}
+
+.navigationMenuItemsRight {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navigationMenuItemRight:not(:last-child) {
+  margin-right: 16px;
+}

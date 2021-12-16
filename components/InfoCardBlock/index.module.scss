@@ -1,0 +1,50 @@
+@import 'styles/shared.module.scss';
+
+.infoCardBlockWrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  background-color: #f2f6fa;
+  padding: 120px 40px;
+}
+
+.infoCardBlockContainer {
+  max-width: 1000px;
+  background: #f9fafc;
+  display: flex;
+  padding: 60px;
+  box-shadow: 10px 11px 23px #00000014;
+  border-radius: 4px;
+
+  &.infoCardBlockContainerSmallViewport {
+    flex-flow: column nowrap;
+  }
+}
+
+.blockTextTitle {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.containerSubParagraph {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.infoCardBlockImage {
+  margin-right: 60px;
+  overflow: hidden;
+
+  &.infoCardBlockImageSmallViewport {
+    margin-bottom: 20px;
+  }
+}
+
+.blockTextContainer {
+  display: flex;
+  flex-flow: column nowrap;
+
+  h2 {
+    font-size: 28px;
+  }
+}

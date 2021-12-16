@@ -1,0 +1,53 @@
+@import 'styles/shared.module.scss';
+
+.multiColumnBlockWrapper {
+  background: #f9fafc;
+}
+
+.multiColumnBlockContainer {
+  padding: 100px 40px;
+  max-width: 1120px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &.multiColumnBlockContainerSmallViewport {
+    flex-flow: column nowrap;
+
+    .columnCardWrapper:first-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.multiColumnBlockContainerSingleColumn {
+  justify-content: center;
+  text-align: center;
+}
+
+.columnCardWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 500px;
+}
+
+.cardImageWrapper {
+}
+
+.cardTitle {
+  font-size: 40px;
+}
+
+.cardDescription {
+  font-size: 18px;
+}
+
+.columnCardButton {
+  align-self: flex-start;
+
+  &.columnCardButtonCentered {
+    margin: 0 auto;
+  }
+}
