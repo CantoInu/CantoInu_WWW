@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Page, { Container } from 'components/Page'
 import { useRouter } from 'next/router'
 
@@ -25,56 +26,62 @@ const hipsterIpsum = `Canto Inu is the first memecoin on Canto, launched in Augu
 const Splash = ({ windowWidth }) => {
   const router = useRouter()
   return (
-    <Page withGlobalNav fullWidth windowWidth={windowWidth}>
-      <HeroBlock
-        title={subtitleExample}
-        subtitle={hipsterIpsumShort}
-        buttonText={'Join the Telegram!'}
-        buttonOnClick={(e) => {
-            e.preventDefault();
-            window.open('http://t.me/CantoInu', '_blank', 'noopener,noreferrer');
-          }
-        }
-        windowWidth={windowWidth}
-      />
-      <section id="About">
-        <InfoCardBlock
-          image={logoImage}
-          title={'What is Canto Inu?'}
-          description={hipsterIpsum}
-          windowWidth={windowWidth}
-        />
-      </section>
-      <section id="Trade">
-        <MultiColumnBlock
-          columns={[
-            {
-              title: 'How Trade?',
-              description: (
-                <div>
-                  <p>{'Canto Inu ($CINU) tokens can be traded on the Canto blockchain at Slingshot and Forteswap.'}</p>
-                  <p>{'CINU is a decentralized experiment and, as such, we always focus on Canto Native DEXs.'}</p>
-                </div>
-              ),
-              buttonText: 'Trade on Slingshot!',
-              buttonOnClick: (e) => {
-                e.preventDefault();
-                window.open('https://app.slingshot.finance/trade/CANTO', '_blank', 'noopener,noreferrer');
-              }
-            },
-            {
-              image: stonksImage,
-              className: styles.boxShadow,
+    <div>
+      <Head>
+          <title>Canto Inu 🐶</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+      <Page withGlobalNav fullWidth windowWidth={windowWidth}>
+        <HeroBlock
+          title={subtitleExample}
+          subtitle={hipsterIpsumShort}
+          buttonText={'Join the Telegram!'}
+          buttonOnClick={(e) => {
+              e.preventDefault();
+              window.open('http://t.me/CantoInu', '_blank', 'noopener,noreferrer');
             }
-          ]}
+          }
           windowWidth={windowWidth}
         />
-      </section>
-      <StartGuideBlock />
-      <section id="NFT">
-        <NFTBlock/>
-      </section>
-    </Page>
+        <section id="About">
+          <InfoCardBlock
+            image={logoImage}
+            title={'What is Canto Inu?'}
+            description={hipsterIpsum}
+            windowWidth={windowWidth}
+          />
+        </section>
+        <section id="Trade">
+          <MultiColumnBlock
+            columns={[
+              {
+                title: 'How Trade?',
+                description: (
+                  <div>
+                    <p>{'Canto Inu ($CINU) tokens can be traded on the Canto blockchain at Slingshot and Forteswap.'}</p>
+                    <p>{'CINU is a decentralized experiment and, as such, we always focus on Canto Native DEXs.'}</p>
+                  </div>
+                ),
+                buttonText: 'Trade on Slingshot!',
+                buttonOnClick: (e) => {
+                  e.preventDefault();
+                  window.open('https://app.slingshot.finance/trade/CANTO', '_blank', 'noopener,noreferrer');
+                }
+              },
+              {
+                image: stonksImage,
+                className: styles.boxShadow,
+              }
+            ]}
+            windowWidth={windowWidth}
+          />
+        </section>
+        <StartGuideBlock />
+        <section id="NFT">
+          <NFTBlock/>
+        </section>
+      </Page>
+    </div>
   )
 }
 
