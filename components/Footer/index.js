@@ -19,6 +19,9 @@ const Footer = () => {
             ))}
           </p>
           <p>{TITLE} &copy; 2022</p>
+          <p>This website does not constitute an offer to purchase or solicitation to sell, nor is it a recommendation to buy or sell, any token or other product. Purchasing and selling tokens is inherently risky and holders must bear their risk of loss. 
+            Neither the authors of this website nor any participants in the Canto Inu project accept any liability for losses or taxes that holders, purchasers or sellers of Canto Inu may incur. The value of Canto Inu may decrease and may be highly volatile.
+            This website is not directed towards any person located in a jurisdiction where purchasing, selling or holding Canto Inu is prohibited or regulated. Consult your local laws before transacting in any cryptocurrency.</p>
         </div>
         {/*
           // TODO: social media icon links
