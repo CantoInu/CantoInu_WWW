@@ -1,6 +1,6 @@
 @import 'styles/shared.module.scss';
 
-.donationBlockWrapper {
+.nftBlockWrapper {
   display: flex;
   justify-content: center;
   max-width: 1000px;
@@ -12,7 +12,7 @@
   box-shadow: inset 0px 0px 15px 0px #ced8e2bd;
 }
 
-.donationBlockContainer {
+.nftBlockContainer {
   align-self: stretch;
   max-width: 1000px;
   background: #f9fafc;
@@ -22,11 +22,11 @@
   border-radius: 4px;
 }
 
-.donationBlockTitle {
+.nftBlockTitle {
   font-size: 40px;
 }
 
-.donationBlockDescription {
+.nftBlockDescription {
   font-size: 20px;
   line-height: 26px;
   padding: 10px 0 0;
@@ -41,7 +41,7 @@
   }
 }
 
-.donationAddressWrapper {
+.nftAddressWrapper {
   background: #ced8e2;
   padding: 20px 20px;
   margin-top: 12px;

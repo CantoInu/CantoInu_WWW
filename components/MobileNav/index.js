@@ -4,7 +4,6 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 import Image from 'next/image'
-import navLogo from 'assets/images/nav-logo.png'
 import styles from './index.module.scss'
 
 const HamburgerMenu = props => {

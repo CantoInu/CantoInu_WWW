@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button, {
   BUTTON_THEME_CALL_TO_ACTION_PRIMARY,
 } from 'components/Button'
-import apuImage from 'images/splash-image-2.png'
+import smileImage from 'images/Shiba-Inu-smile.png'
 import styles from './index.module.scss'
 
 const bubblesUI = (
@@ -37,7 +37,7 @@ const HeroBlock = ({ title, subtitle, buttonText, buttonHref, buttonOnClick, win
           styles.splashImage,
           isSmallViewport && styles.splashImageSmallViewport,
         )}>
-          <Image src={apuImage} />
+          <Image src={smileImage} />
         </div>
         <div className={styles.blockTextContainer}>
           <h1 className={styles.containerSubHeader}>

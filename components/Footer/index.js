@@ -3,8 +3,9 @@ import { Container } from 'components/Page'
 import styles from './index.module.scss'
 import { TITLE, NAV_MENU_ITEMS } from 'components/GlobalNav'
 
-const hipsterIpsumShort = 'Squid artisan tacos kickstarter cloud bread chillwave'
-const subtitleExample = 'A Decentralized Meme Token that Evolved into a Vibrant Ecosystem'
+const subtitleExample = 'A Dog Centric Token on Canto.'
+
+
 
 const Footer = () => {
   return (
@@ -12,11 +13,12 @@ const Footer = () => {
       <div className={styles.footerDistributed}>
         <div className={styles.footerLeft}>
           <p className={styles.footerLinks}>
+            <a href="#" key="HOME">Home</a>
             {NAV_MENU_ITEMS.map(item => (
-              <a href="#" key={item.title}>{item.title}</a>
+              <a href={item.path} key={item.title}>{item.title}</a>
             ))}
           </p>
-          <p>{TITLE} &copy; 2021</p>
+          <p>{TITLE} &copy; 2022</p>
         </div>
         {/*
           // TODO: social media icon links

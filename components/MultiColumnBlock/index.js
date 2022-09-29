@@ -12,7 +12,7 @@ const ColumnCard = ({
   title,
   description,
   buttonText,
-  buttonHref,
+  buttonOnClick,
   customHtml,
   className,
   columnCount,
@@ -38,7 +38,7 @@ const ColumnCard = ({
           <Button
             text={buttonText}
             theme={BUTTON_THEME_CALL_TO_ACTION_PRIMARY}
-            href={buttonHref}
+            onClick={buttonOnClick}
             className={classnames(
               styles.columnCardButton,
               columnCount === 1 && styles.columnCardButtonCentered,

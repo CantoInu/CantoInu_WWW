@@ -6,19 +6,19 @@ import styles from './index.module.scss'
 const START_GUIDE_INSTRUCTIONS = [
   {
     title: 'Create MetaMask wallet',
-    description: 'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive APU.',
+    description: 'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive CINU.',
   },
   {
-    title: 'Send ETH to your wallet',
-    description: 'You can buy Ethereum (ETH) directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the ERC-20 network when transfering ETH.',
+    title: 'Send CANTO to your wallet',
+    description: 'You can buy CANTO on MEXC and transfer it to your MetaMask Wallet.',
   },
   {
-    title: 'Connect your wallet to Milky Swap',
-    description: 'Access your wallet to ShibaSwap by clicking ‘Connect to a wallet’ and selecting MetaMask.',
+    title: 'Connect your wallet to Slingshot or Forteswap',
+    description: 'Give permission to Slingshot or Forteswap to access your wallet by clicking ‘Connect to a wallet’ and selecting MetaMask.',
   },
   {
-    title: 'Swap ETH for APU',
-    description: 'You can start swapping as soon as you have ETH available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
+    title: 'Swap CANTO for CINU',
+    description: 'You can start swapping as soon as you have CANTO available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
   },
 ]
 
