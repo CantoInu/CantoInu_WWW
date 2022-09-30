@@ -187,7 +187,7 @@ class MobileNav extends Component {
 				isOpen && styles.mobileNavTopWrapperOpen,
 			)}>
 				<div className={styles.mobileNavLogo}>
-					{'APU Coin'}
+					{'Canto Inu'}
 				</div>
         <div className={styles.mobileNavHamburgerMenu} onClick={this.handleClick}>
           <HamburgerMenu
